@@ -14,6 +14,18 @@ import java.util.regex.Pattern;
 public class StringUtils {
 	
 	/**
+	 * 判断是否为邮箱
+	 * @param str
+	 * @return
+	 */
+	public static boolean isEmail(String str) {
+		String pattern = "^\\w+@\\w+\\.[a-zA-Z]{2,3}$";
+		Pattern compile = Pattern.compile(pattern);
+		Matcher matcher = compile.matcher(str);
+		return matcher.matches();
+	}
+	
+	/**
 	 *  随机字符串源
 	 */
 	static char charArray[] = new char[36];
