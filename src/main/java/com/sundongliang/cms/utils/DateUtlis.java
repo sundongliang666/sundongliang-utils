@@ -5,17 +5,19 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-/**
- * 关于日期的工具类
- * @author 
- *
- */
-public class DateUtils {
-	
+//关于日期
+public class DateUtlis {
+
 	/**
 	 * 一天有多少毫秒
 	 */
 	static final int millSecondsPerDay =  1000*60*60*24; 
+	
+	
+	
+	
+	
+	
 	
 	/**
 	 * 计算年龄
@@ -155,8 +157,6 @@ public class DateUtils {
 				date.getTime()>firstDayOfWeek.getTime().getTime() );
 
 	}
-	
-	
 	
 	
 }
